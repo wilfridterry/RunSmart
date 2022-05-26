@@ -1,0 +1,11 @@
+@import 'base/variables';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 950px;
+    margin: 0 auto;
+}
