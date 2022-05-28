@@ -53,3 +53,28 @@
         }
     }
 }
+
+@media (max-width: $md) {
+   .promo {
+        &__wrapper {
+            align-items: center;
+        }
+   }
+}
+
+@media (max-width: $sm) {
+    .promo {
+        min-height: 400px;
+        padding-top: 10px;
+        &__header {
+            font-size: 32px;
+        }
+        &__subheader {
+            font-size: 14px;
+        }
+        &__icons { 
+            display: none;
+        }
+        
+    }
+ }
