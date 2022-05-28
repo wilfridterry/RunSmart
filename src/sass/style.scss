@@ -1,4 +1,4 @@
-@import 'base/variables';
+@import "base/_variables.scss";
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -6,6 +6,11 @@
 }
 
 .container {
-    min-width: 950px;
+    max-width: 950px;
     margin: 0 auto;
 }
+
+
+@import "blocks/promo/promo";
+@import "blocks/header/header";
+@import "blocks/button/button";
