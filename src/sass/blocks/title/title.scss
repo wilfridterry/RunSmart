@@ -1,0 +1,28 @@
+.title {
+    font-size: 30px;
+    color: #0d0d0d;
+    text-align: center;
+    text-transform: uppercase;
+    &_left {
+        color: #fff;
+        font-size: 36px;
+        text-align: left;
+    }
+}
+
+
+@media (max-width: $md) {
+    .title {
+        &_left {
+            text-align: center;
+        }
+    }   
+}
+
+@media (max-width: $sm) { 
+    .title {
+        &_left {
+            font-size: 26px;
+        }
+    }
+}

@@ -1,12 +1,6 @@
 .benefits {
     min-height: 475px;
     padding: 70px 0 85px 0;
-    &__header {
-        font-size: 30px;
-        color: #0d0d0d;
-        text-align: center;
-        text-transform: uppercase;
-    }
     &__items {
         display: flex;
         justify-content: space-between;
