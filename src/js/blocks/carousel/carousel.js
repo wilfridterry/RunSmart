@@ -1,0 +1,1 @@
+$('.carousel__inner').slick();

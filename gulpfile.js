@@ -26,9 +26,15 @@ gulp.task('styles', () => {
             .pipe(browserSync.stream());
 });
 
+gulp.task('scripts', () => {
+    return gulp.src("src/sass/**/*.js")
+            .pipe(gulp.dest('src/js'))
+            .pipe(browserSync.stream());
+});
+
 gulp.task('watch', () => {
     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
     gulp.watch('src/*.html').on("change", browserSync.reload);
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts'));
