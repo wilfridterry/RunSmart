@@ -10,7 +10,7 @@
 }
 
 
-@media (max-width: $md) {
+@media (max-width: $lg) {
     .consultation {
         &__descr {
             margin-top: 40px;
@@ -25,7 +25,6 @@
         padding: 50px 0 45px 0;
         &__descr {
             font-size: 16px;
-
         }
     }   
 }

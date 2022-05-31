@@ -30,12 +30,15 @@
       }
     }
     .tns-nav {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
       button {
         border: none;
-        margin-left: 2px;
+        margin-left: 10px;
         background-color: #C70101;
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
       }
       .tns-nav-active {
@@ -51,6 +54,16 @@
     }
     .prev, .next {
       display: none;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .carousel {
+    .tns-item {
+      img {
+        width: 100%;
+      }
     }
   }
 }

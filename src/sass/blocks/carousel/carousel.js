@@ -5,8 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
         slideBy: 'page',
         controls: false,
         nav: false,
+        navPosition: 'bottom',
         responsive: {
             992: {
+                nav: false
+            },
+            320: {
                 nav: true
             }
         }
