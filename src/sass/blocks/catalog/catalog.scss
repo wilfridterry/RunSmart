@@ -1,0 +1,6 @@
+.catalog {
+    padding-bottom: 100px;
+    @import "__tabs/_tabs";
+    @import "__tab/_tab";
+    @import "__content/_content";
+}
