@@ -7,3 +7,9 @@
         display: flex;
     }
 }
+
+@media (max-width: $lg) {
+    &__content {
+        justify-content: space-around;
+    }
+}

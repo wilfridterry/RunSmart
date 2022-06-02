@@ -6,3 +6,12 @@
     list-style-type: none;
     justify-content: center;
 }
+
+@media (max-width: $md) {
+    &__tabs {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+
+    }
+}
