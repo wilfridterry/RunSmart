@@ -1,21 +1,18 @@
 (() => {
-    document.querySelectorAll('.catalog-item__link').forEach(element => {
-        element.addEventListener('click', (event) => {
-            const cardContent = event.currentTarget.closest('.catalog-item__content');
-            const listContent = cardContent.nextElementSibling;
-
-            cardContent.classList.toggle('catalog-item__content_active');
-            listContent.classList.toggle('catalog-item__list_active');
-        });
-    });
-
-    document.querySelectorAll('.catalog-item__back').forEach(element => {
-        element.addEventListener('click', (event) => {
-            const listContent = event.currentTarget.closest('.catalog-item__list');
-            const cardContent = listContent.previousElementSibling;
-
-            cardContent.classList.toggle('catalog-item__content_active');
-            listContent.classList.toggle('catalog-item__list_active');
-        });
-    });
+    toggleCatalogItems('.catalog-item__link');
+    toggleCatalogItems('.catalog-item__back');
 })();
+
+function toggleCatalogItems(className) {
+    document.querySelectorAll(className).forEach((element, index) => {
+        element.addEventListener('click', (event) => {
+
+            document.querySelectorAll('.catalog-item__content')[index]
+                    .classList
+                    .toggle('catalog-item__content_active')
+            document.querySelectorAll('.catalog-item__list')[index]
+                    .classList
+                    .toggle('catalog-item__list_active');
+        });
+    });
+}
