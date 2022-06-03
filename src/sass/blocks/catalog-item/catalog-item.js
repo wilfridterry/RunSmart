@@ -1,18 +1,14 @@
 (() => {
-    toggleCatalogItems('.catalog-item__link');
-    toggleCatalogItems('.catalog-item__back');
-})();
-
-function toggleCatalogItems(className) {
-    document.querySelectorAll(className).forEach((element, index) => {
-        element.addEventListener('click', (event) => {
-
-            document.querySelectorAll('.catalog-item__content')[index]
+    document.querySelector('.catalog__content').addEventListener('click', e => {
+        if (e.target.classList.contains('catalog-item-toggle')) {
+            const parent = e.target.closest('.catalog-item');
+            parent.querySelector('.catalog-item__content')
                     .classList
-                    .toggle('catalog-item__content_active')
-            document.querySelectorAll('.catalog-item__list')[index]
+                    .toggle('catalog-item__content_active');
+
+            parent.querySelector('.catalog-item__list')
                     .classList
                     .toggle('catalog-item__list_active');
-        });
+        }
     });
-}
+})();

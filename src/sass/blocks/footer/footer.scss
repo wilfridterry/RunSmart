@@ -48,3 +48,13 @@
         }
     }
 }
+
+@media (max-width: $sm) {
+    .footer {
+        &__info {
+            width: auto;
+            padding: 25px 39px 30px 39px;
+        }
+
+    }
+}
