@@ -6,7 +6,7 @@
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 460px;
+        max-width: 460px;
         height: 270px;
         background-color: $main_color;
         padding: 50px 68px 60px 68px;
@@ -52,7 +52,7 @@
 @media (max-width: $sm) {
     .footer {
         &__info {
-            width: auto;
+            // width: auto;
             padding: 25px 39px 30px 39px;
         }
 

@@ -26,7 +26,7 @@
     
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:+5555555555">+5 555 555 555</a>
-                    <button class="button">Loremius Dorum</button>
+                    <button class="button" data-toggle-modal="consultation">Loremius Dorum</button>
                 </div>
             </header>
 
@@ -49,7 +49,7 @@
                     </div>
                 </div>
 
-                <button class="button button_main button__promo">Lorem Iptumaris</button>
+                <button class="button button_main button__promo" data-toggle-modal="consultation">Lorem Iptumaris</button>
                 <div class="promo__link">
                     lar
                     <a href="#">GO AWAY</a>
@@ -96,7 +96,7 @@
                 Lorem ipsum dolor sit amet consectetur <br>
                 and adipisicing elit natus volupt.
             </div>
-            <form class="feed-form" action="#" method="POST">
+            <form class="feed-form consultation__form" action="#" method="POST">
                 <input class="feed-form__item" 
                         name="name" 
                         required 
@@ -117,7 +117,6 @@
             </form>
         </div>
     </section>
-
     <section class="carousel">
         <div class="container">
             <div class="carousel__inner">
@@ -176,7 +175,7 @@
                             <div class="catalog-item__old-price">1200 ude.</div>
                             <div class="catalog-item__price">1000 ude.</div>
                         </div>
-                        <button class="button button_size_small">Lorem</button>
+                        <button class="button button_size_small" data-toggle-modal="order" data-modal:descr="Lorem Ipsuratmisu GIE">Lorem</button>
                     </div>
                 </div>
 
@@ -211,7 +210,7 @@
                             <div class="catalog-item__old-price">1200 ude.</div>
                             <div class="catalog-item__price">1000 ude.</div>
                         </div>
-                        <button class="button button_size_small">Lorem</button>
+                        <button class="button button_size_small" data-toggle-modal="order" data-modal:descr="Epu Stylesheet TYR">Lorem</button>
                     </div>
                 </div>
 
@@ -219,7 +218,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="Pulse" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Lorem Ipsuratmisu GIE</div>
+                            <div class="catalog-item__subtitle">Epu Stylesheet TYR</div>
                             <div class="catalog-item__descr">Lorem ipsum dolor sit amet amet consectetur 
                                 cing elit.</div>
                             <a href="javascript:void(0);" class="catalog-item__link catalog-item-toggle  ">Consectetur</a>
@@ -246,43 +245,7 @@
                             <div class="catalog-item__old-price">1200 ude.</div>
                             <div class="catalog-item__price">1000 ude.</div>
                         </div>
-                        <button class="button button_size_small">Lorem</button>
-                    </div>
-                </div>
-
-                <div class="catalog-item catalog__catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="Pulse" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Lorem Ipsuratmisu GIE</div>
-                            <div class="catalog-item__descr">Lorem ipsum dolor sit amet amet consectetur 
-                                cing elit.</div>
-                            <a href="javascript:void(0);" class="catalog-item__link catalog-item-toggle  ">Consectetur</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>
-                                Lorem ipsum impedit incidunt iusto, totam quae itaque reprehenderit accusantium ipsa libero!
-                            </li>
-                            <li>
-                                Lorem ipsum impedit incidunt  reprehenderit accusantium ipsa libero!
-                            </li>
-                            <li>
-                                Lorem  iusto, totam quae itaque ipsa libero!
-                            </li>
-                            <li>
-                                Lorem ipsum totam quae itaque reprehenderit accusantium ipsa libero!
-                            </li>
-                            <a href="javascript:void(0);" class=" catalog-item__back  catalog-item-toggle">Back</a>
-
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item_prices">
-                            <div class="catalog-item__old-price">1200 ude.</div>
-                            <div class="catalog-item__price">1000 ude.</div>
-                        </div>
-                        <button class="button button_size_small">Lorem</button>
+                        <button class="button button_size_small" data-toggle-modal="order">Lorem</button>
                     </div>
                 </div>
 
@@ -318,7 +281,7 @@
                             <div class="catalog-item__old-price">1200 ude.</div>
                             <div class="catalog-item__price">1000 ude.</div>
                         </div>
-                        <button class="button button_size_small">Lorem</button>
+                        <button class="button button_size_small" data-toggle-modal="order">Lorem</button>
                     </div>
                 </div>
 
@@ -354,7 +317,43 @@
                             <div class="catalog-item__old-price">1200 ude.</div>
                             <div class="catalog-item__price">1000 ude.</div>
                         </div>
-                        <button class="button button_size_small">Lorem</button>
+                        <button class="button button_size_small" data-toggle-modal="order">Lorem</button>
+                    </div>
+                </div>
+
+                <div class="catalog-item catalog__catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="Pulse" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Lorem Ipsuratmisu GIE</div>
+                            <div class="catalog-item__descr">Lorem ipsum dolor sit amet amet consectetur 
+                                cing elit.</div>
+                            <a href="javascript:void(0);" class="catalog-item__link catalog-item-toggle  ">Consectetur</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>
+                                Lorem ipsum impedit incidunt iusto, totam quae itaque reprehenderit accusantium ipsa libero!
+                            </li>
+                            <li>
+                                Lorem ipsum impedit incidunt  reprehenderit accusantium ipsa libero!
+                            </li>
+                            <li>
+                                Lorem  iusto, totam quae itaque ipsa libero!
+                            </li>
+                            <li>
+                                Lorem ipsum totam quae itaque reprehenderit accusantium ipsa libero!
+                            </li>
+                            <a href="javascript:void(0);" class=" catalog-item__back  catalog-item-toggle">Back</a>
+
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item_prices">
+                            <div class="catalog-item__old-price">1200 ude.</div>
+                            <div class="catalog-item__price">1000 ude.</div>
+                        </div>
+                        <button class="button button_size_small" data-toggle-modal="order">Lorem</button>
                     </div>
                 </div>
             </div>
@@ -390,7 +389,7 @@
                             <div class="catalog-item__old-price">1200 ude.</div>
                             <div class="catalog-item__price">1000 ude.</div>
                         </div>
-                        <button class="button button_size_small">Lorem</button>
+                        <button class="button button_size_small" data-toggle-modal="order">Lorem</button>
                     </div>
                 </div>
             </div>
@@ -426,7 +425,7 @@
                             <div class="catalog-item__old-price">1200 ude.</div>
                             <div class="catalog-item__price">1000 ude.</div>
                         </div>
-                        <button class="button button_size_small">Lorem</button>
+                        <button class="button button_size_small" data-toggle-modal="order">Lorem</button>
                     </div>
                 </div>
                 <div class="catalog-item catalog__catalog-item">
@@ -460,13 +459,12 @@
                             <div class="catalog-item__old-price">1200 ude.</div>
                             <div class="catalog-item__price">1000 ude.</div>
                         </div>
-                        <button class="button button_size_small">Lorem</button>
+                        <button class="button button_size_small" data-toggle-modal="order">Lorem</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
     <section class="feedback">
         <div class="container">
             <h2 class="title">Lorem Iptumaris</h2>
@@ -515,7 +513,6 @@
             </div>
         </div>
     </section>
-
     <footer class="footer">
         <div class="footer__map"></div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.658230545547!
@@ -545,9 +542,68 @@
             </div>  
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Lorem Ipsuratmisu Dolore Apas</div>
+            <div class="modal__descr">Lorem ipsum dolor sit amet Nihil!</div>
+            <form class="feed-form modal__form" action="#" method="POST">
+                <input class="feed-form__item" 
+                        name="name" 
+                        required 
+                        type="text" 
+                        placeholder="Ipsuratm Lorem">
+                <input class="feed-form__item" 
+                        name="phone" 
+                        required 
+                        type="number" 
+                        placeholder="Adipisicing elit">                
+                <input class="feed-form__item"  
+                        name="email" 
+                        required 
+                        type="email" 
+                        placeholder="Natus volupt">                
+
+                <button class="button button_main" type="submit">Necessitatibus consequatur</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Dolore Apas:</div>
+            <div class="modal__descr">Lorem ipsum dolor!</div>
+            <form class="feed-form modal__form" action="#" method="POST">
+                <input class="feed-form__item" 
+                        name="name" 
+                        required 
+                        type="text" 
+                        placeholder="Ipsuratm Lorem">
+                <input class="feed-form__item" 
+                        name="phone" 
+                        required 
+                        type="number" 
+                        placeholder="Adipisicing elit">                
+                <input class="feed-form__item"  
+                        name="email" 
+                        required 
+                        type="email" 
+                        placeholder="Natus volupt">                
+
+                <button class="button button_main" type="submit">Necessitatibus consequatur</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Dolore Apas:</div>
+            <div class="modal__descr">Lorem ipsum dolor!</div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/blocks/carousel/carousel.js"></script>
     <script src="js/blocks/catalog-item/catalog-item.js"></script>
     <script src="js/blocks/catalog/__tab/tab.js"></script>
+    <script src="js/blocks/modal/modal.js"></script>
 </body>
 </html>
