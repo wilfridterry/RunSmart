@@ -17,6 +17,7 @@
     min-height: 400px;
     background-color: #f2f2f2;
     padding: 40px;
+    transition: 1s all;
     &__close {
         position: absolute;
         top: 0;
@@ -45,15 +46,7 @@
     }
 }
 
-
-.hide {
-    opacity: 0;
-    transition: 1s all;
-}
-
-
 .show {
     display: block;
     opacity: 0;
-    transition: 1s all;
 }
