@@ -27,6 +27,18 @@ document.addEventListener('click', (e) => {
         document.body.style.overflow = '';
         document.querySelector('.overlay').style.display = 'none';
         
-        e.target.parentElement.style.display = 'none';
+        const modal = e.target.parentElement;
+        modal.style.display = 'none';
+        
+        const form = modal.querySelector('form');
+        if (form != undefined) {
+            form.reset();
+            form.querySelectorAll('.error').forEach(elem => {
+                elem.classList.remove('error');
+                if (elem.tagName == "LABEL") {
+                    elem.remove();
+                }
+            });
+        } 
     }
 });
