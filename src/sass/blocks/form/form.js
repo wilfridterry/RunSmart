@@ -10,7 +10,7 @@ function validateForm(selector) {
             email: {
                 required: true,
                 email: true
-            }
+            }           
         }
     });
 }
