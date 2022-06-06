@@ -14,3 +14,13 @@ function validateForm(selector) {
         }
     });
 }
+
+document.addEventListener('submit', e => {
+    e.preventDefault();
+
+    if (e.target.closest('.modal')) {
+        closeModal(e.target.closest('.modal'));
+    }
+
+    openModal(document.querySelector('#thanks'));
+})

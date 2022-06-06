@@ -2,7 +2,7 @@ document.addEventListener('click', e => {
     const toggleModal = e.target.dataset.toggleModal;
     if (toggleModal != undefined) {
         const modal = document.querySelector(`#${toggleModal}`);
-        openModal(modal);
+        openModal(modal, e.target.dataset);
     }
 });
 
@@ -13,7 +13,7 @@ document.addEventListener('click', (e) => {
 });
 
 
-function openModal(modal) {
+function openModal(modal, additional = {}) {
     document.body.style.overflow = 'hidden';
     document.querySelector('.overlay').style.display = 'block';
     
@@ -24,10 +24,10 @@ function openModal(modal) {
         modal.style.opacity = '1';
     }, 0);        
     
-    for (let prop in e.target.dataset) {
+    for (let prop in additional) {
         if (prop.startsWith('modal:')) {
             const elem = prop.split(':')[1];
-            modal.querySelector(`.modal__${elem}`).innerHTML = e.target.dataset[prop];
+            modal.querySelector(`.modal__${elem}`).innerHTML = additional[prop];
         }
     }
 }
