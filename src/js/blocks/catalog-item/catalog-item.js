@@ -11,4 +11,6 @@
                     .toggle('catalog-item__list_active');
         }
     });
+
+    new WOW().init();
 })();
